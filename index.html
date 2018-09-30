@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="assets/css/custom.css" type="text/css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
 
 	<!-- Site Stylesheet -->
@@ -1688,31 +1689,36 @@ Pre press technology</p>
 		<section id="brand" data-carousel="swiper">
 			<div class="container">
 				<div class="section-title text-center">
-					<h2>Sponsers</h2>
+					<h2>Previous Sponsers</h2>
 
 				</div>
 
 				<div class="brand-container" data-swiper="container" data-items="5" data-loop="true" data-speed="600" data-autoplay="5000" data-space="10" data-breakpoints='{"5000": {"slidesPerView": 5}, "1440": {"slidesPerView": 4}, "1024": {"slidesPerView": 3}, "768": {"slidesPerView": 2}, "480": {"slidesPerView": 1}}'>
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="media/brand/1.png" alt="Brand Thumbs">
+							<img src="media/brand/1.jpg" alt="Brand Thumbs">
 						</div>
 						<div class="swiper-slide">
-							<img src="media/brand/2.png" alt="Brand Thumbs">
+							<img src="media/brand/11.jpg" alt="Brand Thumbs">
 						</div>
 						<div class="swiper-slide">
-							<img src="media/brand/3.png" alt="Brand Thumbs">
+							<img src="media/brand/2.jpg" alt="Brand Thumbs">
 						</div>
 						<div class="swiper-slide">
-							<img src="media/brand/4.png" alt="Brand Thumbs">
-						</div>
-
-						<div class="swiper-slide">
-							<img src="media/brand/5.png" alt="Brand Thumbs">
+							<img src="media/brand/3.jpg" alt="Brand Thumbs">
 						</div>
 
 						<div class="swiper-slide">
-							<img src="media/brand/1.png" alt="Brand Thumbs">
+							<img src="media/brand/4.jpg" alt="Brand Thumbs">
+						</div>
+
+						<div class="swiper-slide">
+							<img src="media/brand/5.jpg" alt="Brand Thumbs">
+							
+						</div>
+						<div class="swiper-slide">
+							<img src="media/brand/6.jpg" alt="Brand Thumbs">
+							
 						</div>
 					</div>
 					<!-- /.swiper-wrapper -->
@@ -1903,8 +1909,19 @@ Pre press technology</p>
 							</div>
 							<!-- /.contact-details -->
 						</div>
+						<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 						<!-- /.col-md-4 -->
-						<div class="col-md-8">
+						<!--<div class="col-md-8">
 							<div class="get-in-touch">
 								<h2>Get in Touch</h2>
 								<form id="gp-contact-form" action="http://html.gpthemes.co/adapt/index/mail.php" method="POST" name="appai_message_form">
@@ -1940,7 +1957,7 @@ Pre press technology</p>
 									<p class="appai-form-send-message"></p>
 								</form>
 							</div>
-						</div>
+						</div>-->
 						<!-- /.col-md-8 -->
 					</div>
 					<!-- /.row -->
