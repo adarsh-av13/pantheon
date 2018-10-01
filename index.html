@@ -1926,17 +1926,14 @@ Pre press technology</p>
 							</div>
 							<!-- /.contact-details -->
 						</div>
-						<div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
+						<!-- insert map -->
+<!-- using a responsive iframe -->
+<div class="responsive-map-container">
+  <!-- place the iframe code between here... -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.5204101207146!2d76.9041520147832!3d8.54585129385691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bec79541c519%3A0x98324eb5aafb3778!2sCollege+of+Engineering+Trivandrum!5e0!3m2!1sen!2sin!4v1538417028647" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!-- ... and here -->
+</div>
+<!-- /insert map -->
 						<!-- /.col-md-4 -->
 						<!--<div class="col-md-8">
 							<div class="get-in-touch">
@@ -2024,6 +2021,23 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 	<script src="dependencies/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 	<script src="dependencies/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <style>
+	.responsive-map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+}
 	
  #header.navbar-small .navbar-toggle .icon-bar {
     background: #fff;
