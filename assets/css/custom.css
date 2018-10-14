@@ -34,7 +34,7 @@ body {
 }
 
 #catogories .col-md-4{
-    padding: 5px 0 !important;
+    padding: -2px 0 !important;
 }
 #catogories .service-items p{
     text-align: justify !important;
