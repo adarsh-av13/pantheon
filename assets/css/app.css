@@ -112,7 +112,7 @@ a:hover {
 }
 
 .section-title h2 {
-  color: #000;
+  color: rgb(228, 228, 228);
   font-weight: 800;
   font-size: 30px;
   text-transform: uppercase;
@@ -1926,8 +1926,10 @@ a:hover {
 }
 
 .blog {
-  background: #FFF;
-  box-shadow: 0 10px 30px rgba(50, 50, 50, 0.1);
+  background: #000;
+  color: #fff;
+  /* box-shadow: 0 10px 10px rgb(214, 214, 214); */
+  margin-bottom: 10px;
   max-width: 400px;
 }
 
