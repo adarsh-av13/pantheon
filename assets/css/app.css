@@ -1952,7 +1952,7 @@ a:hover {
 }
 
 .blog .blog-content .blog-title a {
-  color: #333;
+  color: #ccc;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1969,7 +1969,7 @@ a:hover {
 .blog .post-meta li {
   display: inline-block;
   margin-right: 15px;
-  color: #333;
+  color: #ccc;
   font: 14px;
   position: relative;
 }
